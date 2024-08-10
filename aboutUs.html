@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hevy Tour</title>
+    <link rel="stylesheet" href="aboutUs.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <body class="bg-cover bg-center bg-no-repeat bg-fixed  bg-blue-50 " 
+  style="background-image: url('/pexels-fabianwiktor-994605.jpg')">
+  
+ <nav class="p-5 bg-transparent md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-2xl font-[poppins] cursor-pointer">
+        <img class="h-10 inline "  src="/Screenshot 2024-07-24 210458.png" alt=""> 
+      </span>
+      <span class="text-3xl cursor-pointer ma-2 mx-2 md:hidden block right-44">
+         <ion-icon name="menu" onclick="Menu(this)" ></ion-icon>
+         
+      </span>
+     
+     
+ <ul class="md:flex md:items-center z=[-1] font-serif md:z-auto md:static absolute  w-full right-50 md:w-auto md:py-0 
+ py-4 md:pl-20 pl-7 md:opacity-100  opacity-0 top-[-400px] transition-all ease-in duration-500">
+
+    <li class="mx-6 my-6 md:my-0 " >
+      <a href="home.html" class="text-lg text-black hover:text-white  duration-500"  >HOME</a></li>
+    <li class="mx-6 my-6 md:my-0 ">
+      <a href="gallary.html" class="text-lg text-black hover:text-white duration-500">GALLARY</a></li>
+    <li class="mx-6 my-6 md:my-0">
+      <a href="aboutUs.html" class="text-lg  text-black hover:text-white  duration-500">ABOUT  US</a></li>
+      
+
+    
+    <li class="mx-6 my-6 md:my-0">
+      <a href="login.html" class="text-lg text-black hover:text-white  duration-500">LOGIN</a></li>
+    
+        </ul>
+      </ul>
+</div>  
+    
+  
+
+
+
+
+ </nav>
+ 
+
+ <div class="bg-center justify-center bg-no-repeat w-100 h-160 bg-transparent opacity-100 " 
+  style="background-image: url('/pexels-fabianwiktor-994605.jpg')">
+  
+
+<div class="flex items-top justify-center text-2xl w-full h-80 bg-inherit p-20  bg-opacity-30 text-neutral-600">
+  
+
+  <p class="text-center opacity-100 font-serif text-slate-950 w-90 h-50">
+    Welcome to our vibrant world of design, where creativity meets innovation! At Hevy Tour, 
+    we are passionate about transforming ideas into stunning visual experiences. Our team of talented designers, 
+    strategists, and storytellers collaborates closely with clients to craft unique solutions that not only captivate 
+    but also resonate. With a keen eye for detail and a commitment to excellence, we specialize in creating everything from eye-catching 
+     branding to immersive web experiences that elevate your brands presence.
+      Join us on this exciting journey as we push the boundaries of design, turning your vision into reality
+       and making every project an unforgettable adventure. Lets create something extraordinary together!
+
+
+
+       
+        <div class="flex flex-col min-h-screen">
+         
+
+      
+          <div class="bg-transparent text-white p-4 fixed bottom-0 right-0">
+            <p class="font-serif text-2xl mb-2">Contact Us</p>
+
+            <p class="mb-1 flex items-center">
+              <img src="/phone-solid.svg" alt="Phone Icon" class="w-6 h-6 mr-2"> 
+              +251 910 293 847
+            </p>
+            <p class="mb-2 left-0 flex items-center">
+              +251 910 233 887
+            </p>
+         
+          <a href="mailto:hevytour@gmail.com" class="underline hover:text-gray-200 flex items-center font-serif">
+            <img src="/envelope-regular.svg" alt="Email Icon" class="w-6 h-6 mr-2"> 
+            hevytour@gmail.com
+          </a>
+
+          <div class="flex mt-2"> 
+            <a href="#" class="mr-2 flex items-center">
+              <img src="/1161953_instagram_icon.png" alt="Instagram Icon" class="w-7 h-7 mr-5"> 
+            </a>
+            <a href="#" class="mr-2 flex items-center">
+              <img src="/11244080_x_twitter_elon musk_twitter new logo_icon (1).png" alt="Twitter Icon" class="w-7 h-7 mr-5">
+            </a>
+            <a href="#" class="mr-2 flex items-center">
+              <img src="/104498_facebook_icon.png" alt="Facebook Icon" class="w-7 h-7 mr-5"> 
+            </a>
+  
+            </div>
+        </div>
+      </div>
+         
+    
+       
+ </div>
+ 
+    
+
+
+ <script>
+   function Menu(e){
+      let list = document.querySelector('ul');
+      if(e.name === 'menu'){
+        e.name = "close";
+        list.classList.add('top-[80px]');
+        list.classList.add('opacity-100');
+      } else {
+        e.name = "menu";
+        list.classList.remove('top-[80px]');
+        list.classList.remove('opacity-100');
+      }
+   }
+</script>
+</body>
+</html>
